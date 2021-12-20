@@ -1,0 +1,87 @@
+<html>
+  <head>
+    
+     
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    
+    h2.div1{
+    font-family:"Lucida Handwriting", cursive;
+    }
+  </style>
+  </head>
+<body>
+  <h2 class="div1" style="text-align: center;padding-top: 25px;">Contact Us</h2>
+  
+
+<div class="container">
+<div class="row">
+
+<div class="col-sm-7">
+  <section class="icons-container" style="padding-top: 27px;padding-left: 100px;">
+
+    <div class="icons">
+        <i class="glyphicon glyphicon-map-marker"></i>
+        <div class="content">
+            <h3>Our Office Address</h3>
+            <p>Chandanagar, Hyderabad, Telangana 500050</p>
+        </div>
+    
+        </div>
+    <div class="icons">
+        <i class="glyphicon glyphicon-envelope"></i>
+        <div class="content">
+            <h3>General Enquiries</h3>
+            <p>coloshop@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="glyphicon glyphicon-earphone"></i>
+        <div class="content">
+            <h3>Call Us</h3>
+            <p>+91-9756478879</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="glyphicon glyphicon-time"></i>
+        <div class="content">
+            <h3>Our Timing</h3>
+            <p>Mon - Sun:09:00 AM - 09:00 PM</p>
+        </div>
+    </div>
+    </section>
+
+</div>
+
+
+<div class="col-sm-5">
+
+<div class="container1" style="width:60%;margin-top: 70px;">
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    
+    <input type="text" id="fname" formControlName="fname" style="width: 170%;height:45px;" name="firstname" placeholder="YOUR NAME">
+
+   
+
+    
+    <input type="email" id="email" formControlName="email" style="width: 170%;height:45px;"  name="email" placeholder="YOUR EMAIL">
+
+    <input type="text" id="mobile" style="width: 170%;height:45px;"  name="mobile" placeholder="YOUR CONTACT NO.">
+
+    
+
+    
+    <textarea id="subject" name="subject" style="width: 170%;height:80px"  placeholder="YOUR MESSAGE" ></textarea>
+
+    <button type="submit" style="margin-left:70%;border-radius: 20px;margin-top:10px;padding-left:25px;padding-right: 25px;"  value="Submit">Submit</button>
+  </form>
+</div>
+</div></div></div>
+
+</body>
+
+</html>
